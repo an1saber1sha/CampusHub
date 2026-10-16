@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events | CampusHub University Portal</title>
+</head>
+<body>
+
+    <header>
+        <h1>CampusHub</h1>
+        <p>Your University, Your Community, Your Future</p>
+
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="instructors.html">Instructors</a></li>
+                <li><a href="events.html" aria-current="page">Events</a></li>
+                <li><a href="announcements.html">Announcements</a></li>
+                <li><a href="schedule.html">Schedule</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section aria-labelledby="intro-heading">
+            <h2 id="intro-heading">Events</h2>
+
+            <p>
+                Discover what's happening at CampusHub! Attend guest lectures,
+                participate in practical workshops, meet potential employers,
+                and explore new ideas through seminars. Our campus events
+                offer opportunities to learn, connect, and grow.
+            </p>
+        </section>
+
+        <section aria-labelledby="search-heading">
+            <h2 id="search-heading">Find an Event</h2>
+
+            <form action="events.html" method="get">
+                <p>
+                    <label for="event-search">Search Events:</label>
+                    <input
+                        type="search"
+                        id="event-search"
+                        name="search"
+                        placeholder="Enter an event name..."
+                    >
+                </p>
+
+                <p>
+                    <label for="event-category">Event Category:</label>
+                    <select id="event-category" name="category">
+                        <option value="">All Categories</option>
+                        <option value="guest-lecture">Guest Lectures</option>
+                        <option value="workshop">Workshops</option>
+                        <option value="career">Career Events</option>
+                        <option value="seminar">Seminars</option>
+                    </select>
+                </p>
+
+                <button type="submit">Search Events</button>
+            </form>
+
+            <p>
+                These controls demonstrate an accessible HTML form.
+                Actual searching and filtering require additional
+                functionality and are not implemented here.
+            </p>
+        </section>
+
+        <nav aria-label="Event categories">
+            <h2>Browse by Category</h2>
+
+            <ul>
+                <li><a href="#guest-lectures">Guest Lectures</a></li>
+                <li><a href="#workshops">Workshops</a></li>
+                <li><a href="#career-events">Career Events</a></li>
+                <li><a href="#seminars">Seminars</a></li>
+            </ul>
+        </nav>
+
+        <section aria-labelledby="all-events-heading">
+            <h2 id="all-events-heading">Upcoming Events</h2>
+
+            <article id="guest-lectures">
+                <img
+                    src="images/ai-education-lecture.jpg"
+                    alt="Guest speaker presenting artificial intelligence concepts to university students"
+                    width="400"
+                    height="250"
+                >
+
+                <h3>Guest Lecture: AI in Education</h3>
+
+                <p>
+                    <strong>Date:</strong>
+                    <time datetime="2025-04-15">15 April 2025</time>
+                </p>
+
+                <p>
+                    <strong>Time:</strong>
+                    <time datetime="10:00">10:00 AM</time>
+                    –
+                    <time datetime="12:00">12:00 PM</time>
+                </p>
+
+                <p><strong>Venue:</strong> Main Auditorium</p>
+
+                <p>
+                    Explore how artificial intelligence is transforming
+                    education through personalized learning, intelligent
+                    tutoring tools, and new approaches to teaching.
+                    Join our guest speaker for an informative discussion
+                    about the opportunities and challenges of AI in
+                    university classrooms.
+                </p>
+
+                <p>
+                    <a href="event-details.html?event=ai-in-education">
+                        View Details
+                    </a>
+                </p>
+            </article>
+
+            <article id="workshops">
+                <img
+                    src="images/web-development-workshop.jpg"
+                    alt="Students practicing website development on computers in a university lab"
+                    width="400"
+                    height="250"
+                >
+
+                <h3>Workshop: Web Development</h3>
+
+                <p>
+                    <strong>Date:</strong>
+                    <time datetime="2025-04-22">22 April 2025</time>
+                </p>
+
+                <p>
+                    <strong>Time:</strong>
+                    <time datetime="13:00">1:00 PM</time>
+                    –
+                    <time datetime="16:00">4:00 PM</time>
+                </p>
+
+                <p><strong>Venue:</strong> Computer Laboratory 2</p>
+
+                <p>
+                    Build your web development skills in this hands-on
+                    workshop. Learn the fundamentals of HTML5, explore
+                    accessible page structures, and practice creating
+                    a simple website with guidance from experienced
+                    instructors. Suitable for students who want to
+                    strengthen their web development foundations.
+                </p>
+
+                <p>
+                    <a href="event-details.html?event=web-development-workshop">
+                        View Details
+                    </a>
+                </p>
+            </article>
+
+            <article id="career-events">
+                <img
+                    src="images/career-fair.jpg"
+                    alt="University students speaking with company representatives at a career fair"
+                    width="400"
+                    height="250"
+                >
+
+                <h3>Career Fair 2025</h3>
+
+                <p>
+                    <strong>Date:</strong>
+                    <time datetime="2025-04-30">30 April 2025</time>
+                </p>
+
+                <p>
+                    <strong>Time:</strong>
+                    <time datetime="09:00">9:00 AM</time>
+                    –
+                    <time datetime="15:00">3:00 PM</time>
+                </p>
+
+                <p><strong>Venue:</strong> University Conference Hall</p>
+
+                <p>
+                    Meet employers, learn about career opportunities,
+                    and discover internships across a variety of industries.
+                    Bring your CV, practice introducing yourself to recruiters,
+                    and get advice about preparing for your professional future.
+                </p>
+
+                <p>
+                    <a href="event-details.html?event=career-fair-2025">
+                        View Details
+                    </a>
+                </p>
+            </article>
+
+            <article id="seminars">
+                <img
+                    src="images/digital-transformation-seminar.jpg"
+                    alt="Presenter discussing digital transformation with an audience at a university seminar"
+                    width="400"
+                    height="250"
+                >
+
+                <h3>Seminar: Digital Transformation</h3>
+
+                <p>
+                    <strong>Date:</strong>
+                    <time datetime="2025-05-12">12 May 2025</time>
+                </p>
+
+                <p>
+                    <strong>Time:</strong>
+                    <time datetime="11:00">11:00 AM</time>
+                    –
+                    <time datetime="13:00">1:00 PM</time>
+                </p>
+
+                <p><strong>Venue:</strong> Faculty Seminar Room</p>
+
+                <p>
+                    Discover how organizations use digital technologies
+                    to improve services, rethink business processes, and
+                    respond to changing customer needs. This seminar
+                    introduces emerging technologies, digital innovation,
+                    and the challenges organizations face when adopting
+                    new systems.
+                </p>
+
+                <p>
+                    <a href="event-details.html?event=digital-transformation">
+                        View Details
+                    </a>
+                </p>
+            </article>
+        </section>
+
+        <section aria-labelledby="participate-heading">
+            <h2 id="participate-heading">Get Involved in Campus Life</h2>
+
+            <p>
+                Campus events are a great way to develop new skills,
+                meet other students, and discover opportunities beyond
+                the classroom. Explore our courses and meet the people
+                who make CampusHub a vibrant learning community.
+            </p>
+
+            <p><a href="courses.html">Explore Courses</a></p>
+
+            <p><a href="instructors.html">Meet Our Instructors</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 CampusHub University Portal. All rights reserved.</p>
+
+        <nav aria-label="Footer navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="instructors.html">Instructors</a></li>
+                <li><a href="events.html" aria-current="page">Events</a></li>
+                <li><a href="announcements.html">Announcements</a></li>
+                <li><a href="schedule.html">Schedule</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+</body>
+</html>

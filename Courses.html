@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Courses | CampusHub University Portal</title>
+</head>
+<body>
+
+    <header>
+        <h1>CampusHub</h1>
+        <p>Your University, Your Community, Your Future</p>
+
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="courses.html" aria-current="page">Courses</a></li>
+                <li><a href="instructors.html">Instructors</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="announcements.html">Announcements</a></li>
+                <li><a href="schedule.html">Schedule</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section aria-labelledby="intro-heading">
+            <h2 id="intro-heading">Our Courses</h2>
+
+            <p>
+                Discover a wide range of courses designed to help you develop
+                valuable skills, explore your interests, and prepare for your
+                future career. Whether you are interested in technology,
+                business, design, or languages, CampusHub has opportunities
+                to support your academic journey.
+            </p>
+        </section>
+
+        <section aria-labelledby="search-heading">
+            <h2 id="search-heading">Find Your Course</h2>
+
+            <form action="courses.html" method="get">
+                <p>
+                    <label for="course-search">Search Courses:</label>
+                    <input
+                        type="search"
+                        id="course-search"
+                        name="search"
+                        placeholder="Enter a course name..."
+                    >
+                </p>
+
+                <p>
+                    <label for="department">Department:</label>
+                    <select id="department" name="department">
+                        <option value="">All Departments</option>
+                        <option value="computer-science">Computer Science</option>
+                        <option value="business">Business</option>
+                        <option value="design">Design and Arts</option>
+                        <option value="languages">Languages</option>
+                        <option value="engineering">Engineering</option>
+                    </select>
+                </p>
+
+                <p>
+                    <label for="level">Study Level:</label>
+                    <select id="level" name="level">
+                        <option value="">All Levels</option>
+                        <option value="beginner">Beginner</option>
+                        <option value="intermediate">Intermediate</option>
+                        <option value="advanced">Advanced</option>
+                    </select>
+                </p>
+
+                <button type="submit">Search Courses</button>
+            </form>
+
+            <p>
+                Note: These search controls provide an HTML form structure.
+                Actual course filtering requires server-side functionality
+                or JavaScript, which is not included in this page.
+            </p>
+        </section>
+
+        <nav aria-label="Course categories">
+            <h2>Browse by Category</h2>
+            <ul>
+                <li><a href="#computer-science">Computer Science</a></li>
+                <li><a href="#business">Business</a></li>
+                <li><a href="#design">Design and Arts
